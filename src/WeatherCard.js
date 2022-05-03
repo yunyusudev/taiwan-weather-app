@@ -28,35 +28,31 @@ const Titlebar = styled.div`
   font-size: 2rem;
   font-weight: 400;
   color: ${({ theme }) => theme.titleColor};
-  margin-top: 1rem;
-  padding-bottom: 1.5rem;
+  margin-top: 4%;
+  padding-bottom: 3%;
   text-align  :center ;
   border-bottom: 3px solid ${({ theme }) => theme.titleColor};
 `;
 const Cog = styled(CogIcon)`
   position: absolute;
-  top: 10rem;
+  top: 9rem;
   right: 2rem;
   width: 1.2rem;
   height: 1.2rem;
   cursor: pointer;
   *{
       fill: ${({ theme }) => theme.temperatureColor};
-      /* overflow: visible;
-      stroke-width:5px;
-      stroke: ${({ theme }) => theme.temperatureColor};
-      fill:transparent; */
     }
   `;
 const Location = styled.div`
   font-size: 3rem;
   color: ${({ theme }) => theme.titleColor};
-  margin: 2.5rem 0 1.5rem;
+  margin: 10% 0 5%;
 `;
 const Description = styled.div`
   font-size: 1.2rem;
   color: ${({ theme }) => theme.textColor};
-  margin-bottom: 3rem;
+  margin-bottom: 5%;
   letter-spacing: .015rem;
 
 `;
@@ -113,7 +109,7 @@ const Redo = styled.div`
   align-items: flex-start; */
   color: ${({ theme }) => theme.textColor};
   border-top: 3px solid ${({ theme }) => theme.titleColor};
-  padding-top: 2rem;
+  padding-top: 5%;
   letter-spacing: .015rem;
   line-height: 0;
 

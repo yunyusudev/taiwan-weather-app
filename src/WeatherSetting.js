@@ -18,8 +18,8 @@ const Titlebar = styled.div`
   font-size: 2rem;
   font-weight: 400;
   color: ${({ theme }) => theme.titleColor};
-  margin-top: 1rem;
-  padding-bottom: 1.5rem;
+  margin-top: 4%;
+  padding-bottom: 3%;
   text-align  :center ;
   border-bottom: 3px solid ${({ theme }) => theme.titleColor};
 `;
@@ -68,7 +68,7 @@ const ButtonGroup = styled.div`
   padding: 0 1rem;
   > button {
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
     height: 2rem;
     width: 5rem;
     border-radius: 5px;
