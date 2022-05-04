@@ -88,7 +88,7 @@ const WeatherIcon = ({ currentWeatherCode, moment }) => {
 
   return (
     <IconContainer>
-      {console.log(moment)}
+      {/* {console.log(moment)} */}
       {weatherIcons[moment][currentWeatherIcon]}
     </IconContainer>
   );

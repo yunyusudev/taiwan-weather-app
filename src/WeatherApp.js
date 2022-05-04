@@ -41,7 +41,7 @@ const getMoment = (locationName) => {
   const location = sunriseAndSunsetData.find(
     (data) => data.locationName === locationName
   );
-  console.log("12312313:" + locationName, sunriseAndSunsetData);
+  // console.log("12312313:" + locationName, sunriseAndSunsetData);
   if (!location) return null;
   const now = dayjs();
   // 將當前時間以 "2019-10-08" 的時間格式呈現
@@ -71,7 +71,7 @@ const getMoment = (locationName) => {
 };
 
 const WeatherApp = () => {
-  console.log("-----before useState");
+  // console.log("-----before useState");
   //從 localStorage 取出 cityName，並取名為 storageCity
   const storageCity = localStorage.getItem("cityName");
 
@@ -102,7 +102,7 @@ const WeatherApp = () => {
   }, [currentCity]);
   return (
     <ThemeProvider theme={theme[currentTheme]}>
-      {console.log(currentTheme, moment, currentLocation)}
+      {/* {console.log(currentTheme, moment, currentLocation)} */}
       <Container>
         {currentPage === "WeatherCard" && (
           <WeatherCard

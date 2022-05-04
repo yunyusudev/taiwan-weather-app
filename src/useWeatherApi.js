@@ -36,7 +36,7 @@ const fetchWeatherForecast = (cityName) => {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log("data", data);
+      // console.log("data", data);
       const locationData = data.records.location[0];
       const weatherElements = locationData.weatherElement.reduce(
         (neededElements, item) => {
@@ -47,7 +47,7 @@ const fetchWeatherForecast = (cityName) => {
         },
         {}
       );
-      console.log(weatherElements);
+      // console.log(weatherElements);
 
       return {
         description: weatherElements.Wx.parameterName,
@@ -99,7 +99,7 @@ const useWeatherApi = (currentLocation) => {
   }, [locationName, cityName]);
 
   useEffect(() => {
-    console.log("useEffect");
+    // console.log("useEffect");
     fetchData();
   }, [fetchData]);
   // 把要給其他 React 組件使用的資料或方法return出去
